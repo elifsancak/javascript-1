@@ -174,11 +174,11 @@ function tracing1() {
   };
 
   // set values in the args to pass the assert
-  let arg1 = "", arg2 = "", arg3 = "";
+  let arg1 = "y", arg2 = "x", arg3 = "z";
   let returnval = f(arg1, arg2, arg3);
   console.assert(returnval === "zyx", "1 a");
 
-  arg1 = "", arg2 = "", arg3 = "";
+  arg1 = "z", arg2 = "x", arg3 = "y";
   returnval = f(arg1, arg2, arg3);
   console.assert(returnval === "yzx", "1 b");
 
@@ -194,11 +194,11 @@ function tracing2() {
   };
 
   // set values in the args to pass the assert
-  let arg1 = "", arg2 = "", arg3 = "";
+  let arg1 = "x", arg2 = "z", arg3 = "y";
   let returnVal = f(arg1, arg3, arg2);
   console.assert(returnVal === "yxz", "returnVal should be yxz");
 
-  arg1 = "", arg2 = "", arg3 = "";
+  arg1 = "x", arg2 = "y", arg3 = "z";
   returnVal = f(arg2, arg1, arg3);
   console.log(returnVal === "zxy", "returnVal should be zxy");
 
