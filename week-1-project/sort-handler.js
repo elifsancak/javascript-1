@@ -18,8 +18,12 @@ function sortHandler() {
   const toSort = document.getElementById('sort-input').value;
 
   // pass user input through core logic (write this! it doesn't work)
-  const sorted = `sort the charecters in ${toSort}`;
-
+  //const sorted = `sort the charecters in ${toSort}`;
+function sirala(word){
+let yenidensirala = word.split('');
+let yenisiralama = yenidensirala.sort();
+return yenisiralama.join('');
+}
   // report result to user (this works, no need to change it!)
   const outputField = document.getElementById('sort-output');
   outputField.innerHTML = sorted;
