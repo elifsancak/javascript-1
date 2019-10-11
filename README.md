@@ -7,9 +7,9 @@
 
 <body>
 
-## Javascript-1 - Elif Sancak
+<h1>Javascript-1 - Elif Sancak </h1>
 
-## Week 1 Project 
+<h3>Week 1 Project </h3>
 
   <table width="40%">
     <tbody>
