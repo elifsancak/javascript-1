@@ -23,9 +23,7 @@
       <tr>
         <td><a href="https://elifsancak.github.io/javascript-1/week-1-project/devowel-handler">devowel-handler-page</td> </tr>
       <tr>
-          <td><a href="https://elifsancak.github.io/javascript-1/week-1-project/repeat-handler">repeat-handler-page</td> </tr>
-        <tr>
-            <td><a href="https://elifsancak.github.io/HTML-CSS-GitHub/homework/week-1-project/5-up-to-you/">5-up-to-you</td> </tr>         
+          <td><a href="https://elifsancak.github.io/javascript-1/week-1-project/repeat-handler">repeat-handler-page</td> </tr>           
     <tbody>
   </table>          
             
