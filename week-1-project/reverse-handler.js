@@ -18,13 +18,17 @@ function reverseHandler() {
   const toReverse = document.getElementById('reverse-input').value;
 
   // pass user input through core logic (write this! it doesn't work)
-  const reversed = `reverse ${toReverse}`;
+  //const reversed = `reverse ${toReverse}`;
 
-  function reverseHandler(word){
-    let yenidensirala = word.split('');
-    let yenisiralama = yenidensirala.reverse();
-    return yenisiralama.join('');
-    }
+  function MESAJ(str) {
+    
+    let splitString = str.split("");
+    let  splitString2 =  splitString.reverse();
+    let splitString3 = splitString2.join("");
+    return (splitString3);
+}
+    const reversed =  MESAJ(toReverse);
+
   // report result to user (this works, no need to change it!)
   const outputField = document.getElementById('reverse-output');
   outputField.innerHTML = reversed;
