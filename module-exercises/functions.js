@@ -238,12 +238,13 @@ function tracing4() {
 
   // pass x, y and z to the function in the right order
   // don't change their values!
-  let x = "x", y = "y", z = "z";
-  let returnVal = f();
+
+  let arg1 = "z", arg2 = "x", arg3 = "y";
+  let returnVal = f(arg3, arg2, arg1);
   console.assert(returnVal === "yxz", "returnVal should be yxz");
 
-  x = "x", y = "z", z = "y";
-  returnVal = f();
+  arg1 = "y", arg2 = "z", arg3 = "x";
+  returnVal = f(arg1, arg3, arg2);
   console.assert(returnVal === "zyx", "returnVal should be zyx");
 
 }
