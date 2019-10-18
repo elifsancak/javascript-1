@@ -4,11 +4,9 @@
   so if you needed to assign that value to a variable you would do it at the top of your code
   with a name like:
   const SPEED_OF_LIGHT_IN_VACUUM = 'very fast';
-
   in addition, JS doesn't allow certain charecters to be used in variable names
   if a string includes any unallowed charecters, just remove them:
   MILK_&_CEREAL -> MILK__CEREAL
-
   for consistency, and so it's easier to remember variable names,
   make sure there is only ever one underscore in a row
   MILK__CEREAL -> MILK_CEREAL
