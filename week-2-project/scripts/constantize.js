@@ -21,8 +21,40 @@ const constantizeTests = [
   { name: 'sixth', args: ['ALREADY_A_CONSTANT'], expected: 'ALREADY_A_CONSTANT' },
 ];
 function constantize(str) {
-  // write me!
+  var array = str.split("");
+  var empty =" ";
+  array.forEach(function(str) {
+
+    var code=str.charCodeAt(); 
+
+    if (code<=122 && code>=97 || code<=90 && code>=65){
+
+      yazi = str.toUpperCase();
+    }
+    
+    else if (code == 32) {
+
+      yazi = "_";
+
+       //for(code>=1; code<str.lenght; empty++){
+
+        // if(empty==1){
+         
+         }
+         
+    else{
+      yazi = "";
+    }
+    
+    empty=empty+yazi;
+    
+});
+
+return empty;
+
 }
+  // write me!
+
 evaluate(constantize, constantizeTests);
 
 

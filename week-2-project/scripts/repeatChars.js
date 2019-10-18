@@ -15,8 +15,63 @@ const repeatCharsTests = [
   { name: 'seventh', args: [' '], expected: '    ' },
 ];
 function repeatChars(str) {
+  
+      // write this!
+        var array = str.split("");
+        var empty =" ";
+        array.forEach(function(str) {
+          var code=str.charCodeAt(); 
+          if (code<=90 && code>=65){
+            yazi = str+str;
+          }
+          else if (code<=122 && code>=97) {
+            yazi =str+str;
+          }
+          else if (code<=57 && code>=48 ) {
+            yazi =str+str+str;
+          }
+          else if (code == 32 ) {
+           yazi = str+str+str+str;
+          }
+          else{
+            yazi = str+str+str+str;
+          }
+          
+          empty=empty+yazi;
+          
+      });
+      
+      return empty;
+    
+    }
+  /*var array = str.split('');
+  var empty = " ";
+  array.forEach(function(str){
+    var arraycode = str.charCodeAt();
+     if (arraycode<=90 && arraycode>=65){
+       yazi = yazi+yazi;
+      // return yazi;
+     }
+     else if (arraycode<=122 && arraycode>=97) {
+      yazi = yazi+yazi;
+    //  return yazi;
+  }
+     else if (arraycode<=57 && arraycode>=48 ) {
+      yazi = yazi+yazi+yazi; 
+   //   return yazi;
+     }
+     else if (empty == " ") {
+       yazi = empty+empty+empty+empty;
+      // return yazi;
+     }
+     else {
+      yazi = yazi+yazi+yazi+yazi; 
+     // return yazi;
+     };
+   return yazi;
   // write this!
-}
+})*/
+
 evaluate(repeatChars, repeatCharsTests);
 
 
