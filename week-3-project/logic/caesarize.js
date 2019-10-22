@@ -1,11 +1,9 @@
 /* Caesar Cipher
-
   this is a simple encoding algorithm that replaces letters in a message with a new letter
-
   the new letter is determined by shifting N spaces across the alphabet
-
   for example, caesarize("A", 3) will return : "D"
   because "D" is three letters past "A".
+  (yes, this is the same function you wrote last week)
 */
 
 const caesarizeTests = [

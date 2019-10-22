@@ -1,10 +1,7 @@
 /* chunk a string
-
   break a string into an array of strings according to punctuation and tabs/newlines
-
   any continuous series of numbers, letters and spaces will stay together
   and any continuous series of punctuation or tabs/newlines will stay together
-
 */
 
 
