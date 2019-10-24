@@ -21,12 +21,25 @@ const scrambleTests = [
   { name: 'fourth', args: ["name: 'second cow'"], expected: "aemn: 'cow cednos'" },
   { name: 'fifth', args: ["name e eman: 'second cow, cba'"], expected: "aemn e aemn: 'cow cednos, cba'" },
 ];
-function scramble(str) {
+function rasteleSembol(uzunluk, semboller) {
+  var maske = '';
+  if (semboller.indexOf('a') > -1) maske += 'abcdefghijklmnopqrstuvwxyz';
+  if (semboller.indexOf('A') > -1) maske += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  if (semboller.indexOf('0') > -1) maske += '0123456789';
+  if (semboller.indexOf('#') > -1) maske += '~`!@#$%^&*()_+-={}[]:";\'<>?,./|\\';
+  var sonuc = '';
+   
+  for (var i = uzunluk; i > 0; --i) 
+  {
+  sonuc += maske[Math.floor(Math.random() * maske.length)];
+  }
+  return sonuc;
+  }
   /*
     write this function using "chunk", "sortWords" and "reverseChunk"
     each of these functions is one step along the way to a scrambled string
     this is a an exercise to practice using breaking large problems into smaller ones
     and then solving the smaller problems and combining the small solutions into a full solution
   */
-}
+
 evaluate(scramble, scrambleTests);
