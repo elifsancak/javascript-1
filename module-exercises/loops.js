@@ -170,7 +170,10 @@ function loopRefactor3() {
   };
 
   // refactor the while loop into a for loop
-  let forResult = null;
+  let forResult = .5;
+  for (x=9 ; x>2 ; x--){
+    forResult *= x;
+    }
 
   console.assert(forResult === whileResult, 'both loops should have the same behavior');
 
@@ -188,8 +191,10 @@ function loopRefactor4() {
   };
 
   // refactor the while loop into a for loop
-  let forResult = null;
-
+  let forResult = true;
+  for (x = -1; x < 2; x++){
+    forResult = forResult && Boolean(x);
+  }
   console.assert(forResult === whileResult, 'both loops should have the same behavior');
 
 }
@@ -205,6 +210,9 @@ function loopRefactor5() {
 
   // refactor the for loop into a while loop
   let whileResult = 0;
+  for (let i=-3; i<20; i*=-1.5){
+    whileResult = i;
+  }
 
   console.assert(forResult === whileResult, 'both loops should have the same behavior');
 
@@ -222,7 +230,13 @@ function loopRefactor6() {
 
   // refactor the for loop into a while loop
   let whileResult = 0;
-
+  let i = 0;
+  let j = 10;
+  while (i !== j){
+    whileResult = i;
+    i++;
+    j--;
+    }
   console.assert(forResult === whileResult, 'both loops should have the same behavior');
 
 }
