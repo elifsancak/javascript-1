@@ -13,6 +13,6 @@ const reverseChunkTests = [
     { name: 'fifth', args: ['   e e '], expected: '   e e ' },
   ];
   function reverseChunk(str) {
-    // write me!
   }
+  
   evaluate(reverseChunk, reverseChunkTests);
