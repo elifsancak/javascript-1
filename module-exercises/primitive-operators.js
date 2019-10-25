@@ -37,14 +37,15 @@ const plusTests = [
   { name: 'number, undefined', args: [1, undefined], expected: NaN },
   { name: 'NaN, anything else', args: [NaN, 'anything else!'], expected: NaN },
   // fill in the rest of these test cases
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
-  { name: null, args: null, expected: null },
+  { name: 'string, number', args: ['e', 1], expected: 'e1' },
+  { name: 'string, null', args: ['e', null], expected: 'enull' },
+  { name: 'string, undefined', args: ['e', undefined], expected: 'eundefined' },
+  { name: 'string, boolean', args: ['e', false], expected: 'efalse' },
+  { name: 'number, number', args: [1, -1], expected: 0 },
+  { name: 'number, boolean', args: [1, true], expected: 2 },
+  { name: 'number, null', args: [1, null], expected: 1 },
+  { name: 'number, undefined', args: [1, undefined], expected: NaN },
+  { name: 'NaN, anything else', args: [NaN, 'anything else!'], expected: NaN },
 ];
 function plus(a, b) {
   return a + b;

@@ -73,19 +73,19 @@ const BooleanTests = [
   { name: 'boo, false', args: [false], expected: false },
   // anything but 0 & NaN is cast to true
   { name: 'num, 3', args: [3], expected: true },
-  { name: 'num, 0', args: [0], expected: true },
+  { name: 'num, 0', args: [0], expected: false },
   { name: 'num, 1e3', args: [1000], expected: true },
-  { name: 'num, Infinity', args: [Infinity], expected: false },
+  { name: 'num, Infinity', args: [Infinity], expected: true },
   { name: 'num, NaN', args: [NaN], expected: false },
   // null & undefined
-  { name: 'obj, null', args: [null], expected: true },
-  { name: 'und, undefined', args: [undefined], expected: true },
+  { name: 'obj, null', args: [null], expected: false },
+  { name: 'und, undefined', args: [undefined], expected: false },
   // anything but an empty string is cast to true
-  { name: 'str, undefined', args: ['undefined'], expected: false },
-  { name: 'str, false', args: ['false'], expected: false },
+  { name: 'str, undefined', args: ['undefined'], expected: true },
+  { name: 'str, false', args: ['false'], expected: true },
   { name: 'str, Infinity', args: ['Infinity'], expected: true },
   { name: 'str, three', args: ['three'], expected: true },
-  { name: 'str, ', args: [''], expected: true },
+  { name: 'str, ', args: [''], expected: false },
   { name: 'str, 3', args: ['3'], expected: true },
 ];
 Boolean.quizzing = true;
