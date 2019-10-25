@@ -21,7 +21,7 @@ const scrambleTests = [
   { name: 'fourth', args: ["name: 'second cow'"], expected: "aemn: 'cow cednos'" },
   { name: 'fifth', args: ["name e eman: 'second cow, cba'"], expected: "aemn e aemn: 'cow cednos, cba'" },
 ];
-function rasteleSembol(uzunluk, semboller) {
+function scramble(str) {
 
   /*
     write this function using "chunk", "sortWords" and "reverseChunk"
